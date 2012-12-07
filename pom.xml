@@ -1,25 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.picketbox.picketbox-auth</groupId>
-  <artifactId>picketbox-auth-parent</artifactId>
-  <version>1.0.0.Alpha1-SNAPSHOT</version>
-  <packaging>pom</packaging>
+   <groupId>org.picketbox.picketbox-auth</groupId>
+   <artifactId>picketbox-auth-parent</artifactId>
+   <version>1.0.0.Alpha1-SNAPSHOT</version>
+   <packaging>pom</packaging>
 
-  <name>picketbox-auth-parent</name>
-  <url>http://maven.apache.org</url>
+   <name>picketbox-auth-parent</name>
+   <url>http://www.jboss.org/picketbox</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+   <licenses>
+      <license>
+         <name>LGPL 2.1</name>
+         <url>http://www.gnu.org/licenses/lgpl-2.1.html</url>
+         <distribution>repo</distribution>
+      </license>
+   </licenses>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+   <scm>
+      <connection>scm:git://github.com/darranl/picketbox-auth.git</connection>
+      <developerConnection>scm:git@github.com:darranl/picketbox-auth.git</developerConnection>
+      <url>https://github.com/darranl/picketbox-auth</url>
+   </scm>
+
+   <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+   </properties>
+
+
+   <modules>
+      <module>client-api</module>
+      <module>direct-client-api</module>
+      <module>protocol</module>
+      <module>server-api</module>
+      <module>service</module>
+   </modules>
 </project>
